@@ -50,7 +50,7 @@ function Form (props) {
             </label>
 
             <div className = 'submit'>
-                <button > Submit</button>  
+                <button disabled={!values.name || !values.email || !values.role ? true: false}>submit</button>  
             </div>
 
         </form>
